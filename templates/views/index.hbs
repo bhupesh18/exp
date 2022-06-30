@@ -1,0 +1,13 @@
+
+{{#each data}}
+<div class="card">
+  <div class="card-body">
+    <p class="card-title"><h4><b>Author Name: </b>{{this.authorname}}</h4></p>
+    <p class="card-text"><b>Article Title: </b>{{this.articletitle}}</p>
+
+    <p>
+  <a href = "art/{{this.id}}" id="text" type="button" class="btn btn-primary">Article Text</a>
+</p>
+</div>
+</div><br><br>
+{{/each}}

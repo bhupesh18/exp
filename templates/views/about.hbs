@@ -1,0 +1,14 @@
+<div class="jumbotron" style="text-align: center">
+  <h2><b>
+    About Us</b>
+  </h2>
+  <br>
+  {{#each data}}
+  <h4>
+  <p style="color:blue;"><b>{{this.cname}}</b></p>
+  <p>{{this.address}}</p>
+  <p><b>Contact No. : </b>{{this.cdetails}}</p>
+  <p><b>Email: </b>{{this.email}}</p>
+  </h4>
+  {{/each}}
+</div>

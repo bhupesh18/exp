@@ -1,0 +1,24 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">S No</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">Message</th>
+      </tr>
+    </thead>
+    {{#each data}}
+    <tbody>
+      <tr>
+        <th scope="row">{{this.Id}}</th>
+        <td>{{this.fname}} {{this.lname}}</td>
+        
+        <td>{{this.message}}</td>
+      </tr>
+    </tbody>
+    {{/each}}
+</table>
+
+<div class="form-group">
+        <button type="edit" id="edit" class="btn btn-secondary">Edit</button>
+        <button type="delete" id="delete" class="btn btn-primary">Delete</button>
+        </div>
